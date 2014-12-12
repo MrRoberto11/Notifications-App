@@ -45,7 +45,7 @@ function createDialog() {
         	
 function dialogDismissed(buttonIndex) {
 	
-	if(buttonIndex==1) new Toast({content: "Eat you fool", duration: 3000}) createNotification();;
+	if(buttonIndex==1) new Toast({content: "Eat you fool", duration: 3000});
    	else if(buttonIndex==2) new Toast({content: 'One does not simply stop for food', duration: 3000});
 	else if(buttonIndex==3) new Toast({content: 'Make your mind up ', duration: 3000});
 	else if(buttonIndex==0) new Toast({content: 'Dont you ignore me' , duration: 3000}) ;
