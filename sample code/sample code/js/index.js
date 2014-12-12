@@ -45,10 +45,10 @@ function createDialog() {
         	
 function dialogDismissed(buttonIndex) {
 	
-	if(buttonIndex==1) new Toast({content: "Eat you fool", duration: 3000});
+	if(buttonIndex==1) new Toast({content: "Eat you fool", duration: 3000}) createNotification();;
    	else if(buttonIndex==2) new Toast({content: 'One does not simply stop for food', duration: 3000});
 	else if(buttonIndex==3) new Toast({content: 'Make your mind up ', duration: 3000});
-	else if(buttonIndex==0) new Toast({content: 'Dont you ignore me' , duration: 3000});
+	else if(buttonIndex==0) new Toast({content: 'Dont you ignore me' , duration: 3000}) ;
 
 }
 
@@ -60,7 +60,7 @@ function createNotification() {
     //generate a time to post notification
     //
     var currentTime = new Date().getTime(); //current time
-    var notificationTime = new Date(currentTime + 1000); //delayed time  - add 1 second
+    var notificationTime = new Date(currentTime + 100000); //delayed time  - add 1 second
     			
     //
     //setup notification
@@ -68,7 +68,7 @@ function createNotification() {
 	window.plugin.notification.local.add({ 
     	id: 		1,
         title: 		"Hey you",
-        message: 	"This is an example notification",
+        message: 	"Lunch is over get back to work",
         date: 		notificationTime, 
         badge: 		notification_count++
    	});
