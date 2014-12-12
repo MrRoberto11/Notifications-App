@@ -74,3 +74,5 @@ function createNotification() {
    	});
     
 }
+
+notification.local.onclick () {createDialog();}
