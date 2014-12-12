@@ -36,7 +36,7 @@ function createDialog() {
     	'Are you Hungry',  // message
         dialogDismissed,         // callback
         'PICK ONE!!',            // title
-        ['YES', 'NO','MAYBE']                  // buttons
+        ['YES', 'NO',' MAYBE']                  // buttons
     );
 
 }
@@ -48,6 +48,7 @@ function dialogDismissed(buttonIndex) {
 	if(buttonIndex==1) new Toast({content: "Eat you fool", duration: 3000});
    	else if(buttonIndex==2) new Toast({content: 'One does not simply stop for food', duration: 3000});
 	else if(buttonIndex==3) new Toast({content: 'Make your mind up ', duration: 3000});
+	else if(buttonIndex==0) new Toast({content: 'Dont you ignore me' , duration: 3000});
 
 }
 
