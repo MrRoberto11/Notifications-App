@@ -75,4 +75,4 @@ function createNotification() {
     
 }
 
-notification.local.onclick () {createDialog();}
+window.plugin.notification.local.onclick = function (){createDialog()};
